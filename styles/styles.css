@@ -1,0 +1,168 @@
+.poke__logo {
+  height: 100px;
+}
+
+.poke {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+}
+.poke__logo {
+  height: 100px;
+}
+.poke__main-page {
+  padding-right: 2rem;
+  text-decoration: none;
+  list-style: none;
+  color: blue;
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+.poke__battle {
+  padding-left: 2rem;
+  text-decoration: none;
+  list-style: none;
+  color: blue;
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+.mon {
+  background-color: red;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.mon__copyright {
+  color: white;
+  text-align: center;
+}
+.mon__creators {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: white;
+}
+.mon__andy {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.background-image {
+  background-image: url("/assets/Pokemon Battle Background The background modified to.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 30%;
+  width: 100%;
+}
+
+.poke-name {
+  color: red;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.poke-hp {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.opponent {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.opponent__container {
+  width: 200px;
+  padding: 10px;
+  margin-top: 1rem;
+  margin-right: 10rem;
+  box-shadow: 7px 10px 12px -5px rgba(0, 0, 0, 0.56);
+  text-align: center;
+  background-color: white;
+  border-radius: 3px;
+}
+
+.player {
+  display: flex;
+}
+.player__textbox {
+  width: 50%;
+  padding: 10px;
+  box-shadow: 7px 10px 12px -5px rgba(0, 0, 0, 0.56);
+  text-align: center;
+  background-color: lightgreen;
+  border-radius: 3px;
+  border: 4px solid black;
+  color: white;
+  font-size: 24px;
+}
+.player__container {
+  width: 50%;
+  padding: 10px;
+  box-shadow: 7px 10px 12px -5px rgba(0, 0, 0, 0.56);
+  text-align: center;
+  background-color: white;
+  border-radius: 3px;
+  border-top: 4px solid black;
+  border-right: 4px solid black;
+  border-bottom: 4px solid black;
+}
+.player__poke-name {
+  color: blue;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.player__poke-hp {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.player-attacks {
+  font-weight: 600;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#player-moves {
+  padding: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+button {
+  padding: 1rem;
+  border-radius: 3px;
+  background-color: blue;
+  color: white;
+  border: none;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.battlefield {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.battlefield__opponent {
+  padding-right: 14rem;
+  align-self: flex-end;
+}
+.battlefield__player {
+  align-self: flex-start;
+  padding-left: 15rem;
+}
+
+.pokecard-image {
+  height: 300px;
+}/*# sourceMappingURL=styles.css.map */

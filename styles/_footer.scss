@@ -1,0 +1,25 @@
+.mon{
+    background-color: red;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    &__copyright{
+        color: white;
+        text-align: center;
+    }
+
+    &__creators {
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+       color: white;
+    }
+
+    &__andy{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
