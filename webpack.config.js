@@ -6,9 +6,15 @@ module.exports = {
   entry: {
     index: {
       import: "./src/index.js",
+      //   dependOn: "shared",
     },
+    // scripts: {
+    //   import: "./src/scripts/script",
+    //   dependOn: "index",
+    // },
+    // shared: ["axios"],
   },
-  devtool: "eval-cheap-module-source-map",
+  devtool: "inline-source-map",
   devServer: {
     static: "./dist",
   },
@@ -23,14 +29,14 @@ module.exports = {
     clean: true,
     publicPath: "/",
   },
-  externals: {
-    axios: {
-      commonjs: "axios",
-      commonjs2: "axios",
-      amd: "axios",
-      root: "axios",
-    },
-  },
+  //   externals: {
+  //     axios: {
+  //       commonjs: "axios",
+  //       commonjs2: "axios",
+  //       amd: "axios",
+  //       root: "axios",
+  //     },
+  //   },
   optimization: {
     moduleIds: "deterministic",
     runtimeChunk: "single",
