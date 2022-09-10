@@ -8,10 +8,10 @@ module.exports = {
       import: "./src/index.js",
       //   dependOn: "shared",
     },
-    // scripts: {
-    //   import: "./src/scripts/script",
-    //   dependOn: "index",
-    // },
+    scripts: {
+      import: "./src/scripts/script",
+      dependOn: "index",
+    },
     // shared: ["axios"],
   },
   devtool: "inline-source-map",

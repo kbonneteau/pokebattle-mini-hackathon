@@ -5,5 +5,5 @@
 # Ignore vendor files
 /node_modules
 
-/dist/*.png
-/dist/*.js
+# /dist/*.png
+# /dist/*.js
