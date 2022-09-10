@@ -1,8 +1,10 @@
-import axios from "axios";
+import "./styles/styles.scss";
+import "./scripts/script";
+import pokeBattleLogo from "./assets/pokemon-logo.png";
 
-const loadPokeData = async () => {
-  const data = await axios.get(`https://pokeapi.co/api/v2/pokemon/1`);
-  console.log(data.data);
+const logoLoader = () => {
+  const logo = document.querySelector(".poke__logo");
+  logo.src = pokeBattleLogo;
 };
 
-loadPokeData();
+logoLoader();
