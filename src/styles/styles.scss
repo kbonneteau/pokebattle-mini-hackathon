@@ -14,10 +14,6 @@ body {
   width: 100%;
 }
 
-.music {
-  // display: none;
-}
-
 .opponent {
   display: flex;
   flex-direction: row;
@@ -122,8 +118,8 @@ button {
     align-self: flex-start;
     padding-left: 15rem;
   }
-}
 
-.pokecard-image {
-  height: 300px;
+  &__pokemon {
+    height: 300px;
+  }
 }

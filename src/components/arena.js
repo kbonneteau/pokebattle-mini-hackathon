@@ -1,11 +1,11 @@
-import arenaBackground from "../assets/pokemon-logo.png";
 import { createNewElement } from "../services/templateFunctions";
 import OpponentStats from "../components/opponentStats";
+import Battlefield from "./battlefield";
 
 {
   /* <div class="background-image"> // done
 
-        <section class=opponent> // TODO
+        <section class=opponent> // done
             <div class="opponent__container">
                 <h2>Opponent</h1>
                     <p class="poke-name"></p>
@@ -29,6 +29,7 @@ import OpponentStats from "../components/opponentStats";
 const Arena = () => {
   const arena = createNewElement("div", ["arena"]);
   arena.appendChild(OpponentStats());
+  arena.appendChild(Battlefield());
 
   return arena;
 };

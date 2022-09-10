@@ -242,13 +242,13 @@ let player = {
 // Store opponent's values
 const opponentPokemonName = document.querySelector(".opponent__poke-name");
 let opponentHpDisplay = document.querySelector(".poke-hp");
-const opponentImage = document.querySelector(".opponent__image");
+const opponentImage = document.querySelector(".opponent-pokemon-image");
 let opponentTotalHp;
 
 // Store player's values
 const playerPokemonName = document.querySelector(".player__poke-name");
 let playerHpDisplay = document.querySelector(".player__poke-hp");
-const playerImage = document.querySelector(".player__image");
+const playerImage = document.querySelector(".player-pokemon-image");
 let playerTotalHp;
 
 // ======================
