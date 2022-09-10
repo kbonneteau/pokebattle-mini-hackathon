@@ -17,6 +17,9 @@ export const createNewElement = (type, classNames = [], text = "") => {
     "li",
     "img",
     "h2",
+    "form",
+    "label",
+    "select",
   ];
 
   if (!allowedTags.includes(type)) {
