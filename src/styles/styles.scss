@@ -6,6 +6,16 @@ body {
   font-family: sans-serif;
 }
 
+button {
+  padding: 1rem;
+  border-radius: 3px;
+  background-color: blue;
+  color: white;
+  border: none;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
 .arena {
   background-image: url("../assets/Pokemon-Battle-Background.png");
   background-repeat: no-repeat;
@@ -42,19 +52,28 @@ body {
   }
 }
 
+.battlefield {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__opponent {
+    padding-right: 14rem;
+    align-self: flex-end;
+  }
+
+  &__player {
+    align-self: flex-start;
+    padding-left: 15rem;
+  }
+
+  &__pokemon {
+    height: 300px;
+  }
+}
+
 .player {
   display: flex;
-  &__textbox {
-    width: 50%;
-    padding: 10px;
-    box-shadow: 7px 10px 12px -5px rgba(0, 0, 0, 0.56);
-    text-align: center;
-    background-color: lightgreen;
-    border-radius: 3px;
-    border: 4px solid black;
-    color: white;
-    font-size: 24px;
-  }
 
   &__container {
     width: 50%;
@@ -94,32 +113,16 @@ body {
   text-transform: uppercase;
 }
 
-button {
-  padding: 1rem;
+.prompt {
+  width: 50%;
+  padding: 10px;
+  box-shadow: 7px 10px 12px -5px rgba(0, 0, 0, 0.56);
+  text-align: center;
+  background-color: lightgreen;
   border-radius: 3px;
-  background-color: blue;
-  color: white;
-  border: none;
-  text-transform: uppercase;
-  font-weight: 700;
-}
+  border: 4px solid black;
 
-.battlefield {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  &__opponent {
-    padding-right: 14rem;
-    align-self: flex-end;
-  }
-
-  &__player {
-    align-self: flex-start;
-    padding-left: 15rem;
-  }
-
-  &__pokemon {
-    height: 300px;
+  &__text {
+    font-size: 24px;
   }
 }
