@@ -6,23 +6,12 @@ body {
   font-family: sans-serif;
 }
 
-.background-image {
+.arena {
   background-image: url("../assets/Pokemon-Battle-Background.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center 30%;
   width: 100%;
-}
-
-.poke-name {
-  color: red;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-
-.poke-hp {
-  font-weight: 600;
-  text-transform: uppercase;
 }
 
 .music {
@@ -43,6 +32,17 @@ body {
     text-align: center;
     background-color: white;
     border-radius: 3px;
+  }
+
+  &__poke-name {
+    color: red;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  &__poke-hp {
+    font-weight: 600;
+    text-transform: uppercase;
   }
 }
 
