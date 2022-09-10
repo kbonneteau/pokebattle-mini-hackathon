@@ -7,4 +7,4 @@
 
 /dist/main.js
 /dist/*.png
-/dist/bundle.js
+/dist/*.bundle.js
