@@ -20,6 +20,7 @@ export const createNewElement = (type, classNames = [], text = "") => {
     "form",
     "label",
     "select",
+    "button",
   ];
 
   if (!allowedTags.includes(type)) {

@@ -227,8 +227,8 @@ const startNewBattle = () => {
 const form = document.querySelector(".player-attacks");
 const moveList = document.getElementById("player-moves");
 const submitButton = document.querySelector(".submit");
-const dialogBox = document.querySelector(".player__textbox");
-const battleText = document.querySelector(".player__textprompt");
+const dialogBox = document.querySelector(".prompt");
+const battleText = document.querySelector(".prompt__text");
 const newBattle = document.querySelector(".new-battle");
 
 let opponent = {

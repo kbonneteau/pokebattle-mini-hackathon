@@ -5,7 +5,7 @@ import PlayerPrompt from "./playerPrompt";
 const PlayerArea = () => {
   const playArea = createNewElement("section", ["player"]);
   playArea.appendChild(PlayerStats());
-  //   playArea.appendChild(PlayerPrompt())
+  playArea.appendChild(PlayerPrompt());
 
   return playArea;
 };
