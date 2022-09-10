@@ -241,7 +241,7 @@ let player = {
 
 // Store opponent's values
 const opponentPokemonName = document.querySelector(".opponent__poke-name");
-let opponentHpDisplay = document.querySelector(".poke-hp");
+let opponentHpDisplay = document.querySelector(".opponent__poke-hp");
 const opponentImage = document.querySelector(".opponent-pokemon-image");
 let opponentTotalHp;
 
