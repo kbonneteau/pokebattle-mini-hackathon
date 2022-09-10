@@ -1,138 +1,129 @@
-@use 'header' as*;
-@use 'footer' as*;
+@use "header" as *;
+@use "footer" as *;
 
 body {
-    margin: 0;
-    font-family: sans-serif;
-  }
-
-.background-image{
-    background-image: url("../assets/Pokemon-Battle-Background.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center 30%;
-    width: 100%;
+  margin: 0;
+  font-family: sans-serif;
 }
 
-.poke-name{
-    color: red;
-    font-weight: 600;
-    text-transform: uppercase;
+.background-image {
+  background-image: url("../assets/Pokemon-Battle-Background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 30%;
+  width: 100%;
 }
 
-.poke-hp{
-    font-weight: 600;
-    text-transform: uppercase;
+.poke-name {
+  color: red;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
-
-.music{
-    // display: none;
+.poke-hp {
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
+.music {
+  // display: none;
+}
 
 .opponent {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
 
-    &__container{       
-        width: 200px;
-        padding: 10px;
-        margin-top: 1rem;
-        margin-right: 10rem;
-        box-shadow: 7px 10px 12px -5px rgba(0,0,0,0.56);
-        text-align:center;
-        background-color: white;
-        border-radius: 3px
-    }
-
+  &__container {
+    width: 200px;
+    padding: 10px;
+    margin-top: 1rem;
+    margin-right: 10rem;
+    box-shadow: 7px 10px 12px -5px rgba(0, 0, 0, 0.56);
+    text-align: center;
+    background-color: white;
+    border-radius: 3px;
+  }
 }
 
-.player{
-    display: flex;
-    &__textbox{
-        width: 50%;
-        padding: 10px;
-        box-shadow: 7px 10px 12px -5px rgba(0,0,0,0.56);
-        text-align:center;
-        background-color: lightgreen;
-        border-radius: 3px;
-        border: 4px solid black;
-        color: white;
-        font-size: 24px;
-        
-    }
-    
-    &__container{
-        width: 50%;
-        padding: 10px;
-        box-shadow: 7px 10px 12px -5px rgba(0,0,0,0.56);
-        text-align:center;
-        background-color: white;
-        border-radius: 3px;
-        border-top: 4px solid black;
-        border-right: 4px solid black;
-        border-bottom: 4px solid black;
-    }
+.player {
+  display: flex;
+  &__textbox {
+    width: 50%;
+    padding: 10px;
+    box-shadow: 7px 10px 12px -5px rgba(0, 0, 0, 0.56);
+    text-align: center;
+    background-color: lightgreen;
+    border-radius: 3px;
+    border: 4px solid black;
+    color: white;
+    font-size: 24px;
+  }
 
-    &__poke-name{
-        color: blue;
-        font-weight: 600;
-        text-transform: uppercase;
-    }
+  &__container {
+    width: 50%;
+    padding: 10px;
+    box-shadow: 7px 10px 12px -5px rgba(0, 0, 0, 0.56);
+    text-align: center;
+    background-color: white;
+    border-radius: 3px;
+    border-top: 4px solid black;
+    border-right: 4px solid black;
+    border-bottom: 4px solid black;
+  }
 
-    &__poke-hp{
-        font-weight: 600;
-        text-transform: uppercase;
-    }
-
-    &-attacks{
-        font-weight: 600;
-        text-transform: uppercase;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-    }
-}
-
-#player-moves{
-    padding:1rem;
+  &__poke-name {
+    color: blue;
     font-weight: 600;
     text-transform: uppercase;
-}
+  }
 
-button{
-    padding: 1rem;
-    border-radius: 3px;
-    background-color: blue;
-    color: white;
-    border: none;
+  &__poke-hp {
+    font-weight: 600;
     text-transform: uppercase;
-    font-weight: 700;
+  }
 
-}
-
-
-.battlefield{
+  &-attacks {
+    font-weight: 600;
+    text-transform: uppercase;
     display: flex;
-    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
-
-    &__opponent{
-        padding-right: 14rem;
-        align-self: flex-end;
-    }
-
-    &__player{
-        align-self: flex-start;
-        padding-left: 15rem;
-    }
+  }
 }
 
+#player-moves {
+  padding: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
 
+button {
+  padding: 1rem;
+  border-radius: 3px;
+  background-color: blue;
+  color: white;
+  border: none;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.battlefield {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__opponent {
+    padding-right: 14rem;
+    align-self: flex-end;
+  }
+
+  &__player {
+    align-self: flex-start;
+    padding-left: 15rem;
+  }
+}
 
 .pokecard-image {
-        height: 300px;
+  height: 300px;
 }
-

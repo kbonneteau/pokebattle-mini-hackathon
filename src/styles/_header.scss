@@ -1,33 +1,32 @@
 .poke__logo {
-    height: 100px;
+  height: 100px;
 }
 
 .poke {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
 
-    &__logo {
+  &__logo {
     height: 100px;
-    }
+  }
 
-    &__main-page{
-        padding-right: 2rem;
-        text-decoration: none;
-        list-style: none;
-        color: blue;
-        font-weight: 600;
-        font-size: 1.25rem;
-    }
+  &__main-page {
+    padding-right: 2rem;
+    text-decoration: none;
+    list-style: none;
+    color: blue;
+    font-weight: 600;
+    font-size: 1.25rem;
+  }
 
-    &__battle{
-        padding-left: 2rem;
-        text-decoration: none;
-        list-style: none;
-        color: blue;
-        font-weight: 600;
-        font-size: 1.25rem;
-    }
-
+  &__battle {
+    padding-left: 2rem;
+    text-decoration: none;
+    list-style: none;
+    color: blue;
+    font-weight: 600;
+    font-size: 1.25rem;
+  }
 }
