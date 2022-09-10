@@ -8,7 +8,7 @@ module.exports = {
       import: "./src/index.js",
     },
   },
-  devtool: "inline-source-map",
+  devtool: "eval-cheap-module-source-map",
   devServer: {
     static: "./dist",
   },
