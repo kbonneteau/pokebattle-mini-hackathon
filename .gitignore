@@ -3,4 +3,6 @@
 # Ignore scss map files 
 *.css.map
 # Ignore vendor files
-*/node_modules
+/node_modules
+
+/dist/main.js
