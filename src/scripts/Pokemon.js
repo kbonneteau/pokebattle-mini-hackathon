@@ -1,3 +1,9 @@
+import AllStats from "./AllStats";
+
+// this can be an abstract
+// create different Pokemon Type classes?
+// use Pokemon factory to handle class creation?
+
 /**
  * Pokemon class to store relevant pokemon data.
  *
@@ -20,16 +26,46 @@ class Pokemon {
   //   baseStats;
   //   name;
 
-  constructor(pokemonName, pokemonMoves, pokemonHp, pokemonSprites) {
+  //   constructor(
+  //     pokemonName,
+  //     pokemonMoves,
+  //     pokemonHp,
+  //     pokemonSprites,
+  //     baseStats,
+  //     types,
+  //     level
+  //   ) {
+  constructor(
+    pokemonName,
+    // pokemonMoves,
+    // pokemonHp,
+    // pokemonSprites,
+    baseStats,
+    level
+  ) {
     this.pokemonName = pokemonName;
-    this.pokemonHp = pokemonHp;
-    this.pokemonMoves = pokemonMoves;
-    this.pokemonSprites = pokemonSprites;
+    // this.pokemonHp = pokemonHp;
+    // this.pokemonMoves = pokemonMoves;
+    // this.pokemonSprites = pokemonSprites;
+    this.stats = new AllStats(baseStats);
+    this.level = level;
+    // this.types = types;
   }
-  describe() {
+  describe = () => {
     console.log(this.pokemonName);
     console.log(this.pokemonHp);
-  }
+  };
+
+  getStats = () => {
+    return this.stats.getCurrentStats(this.level);
+  };
+
+  // this doesn't work
+  // I'll need to loop through base stats provided
+  // determine if a stat is a special
+  // then set the stats
+  // will need to pass base stats as param
+
   //   attack() {}
   //   lvlUp() {}
 

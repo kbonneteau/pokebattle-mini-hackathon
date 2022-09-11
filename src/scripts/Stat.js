@@ -1,7 +1,6 @@
 // effortValue === stat experience
 // IVs are listed from 0-15
 class Stat {
-  static ALL_STATS = ["attack", "defense", "special", "speed"];
   static DEFAULT_EV = 0; // value set for newly caught pokemon
   static MAX_EV = 65535;
   static MAX_IV = 16;
@@ -9,8 +8,8 @@ class Stat {
   constructor(name, baseValue) {
     this.name = name;
     this.baseValue = baseValue;
-    this.effortValue = this.DEFAULT_EV;
-    this.individualValue = this.generateIndividualValue();
+    this.effortValue = Stat.DEFAULT_EV;
+    this.individualValue = this.initializeIndividualValue();
   }
 
   calculateStat(level) {
@@ -23,8 +22,8 @@ class Stat {
     );
   }
 
-  generateIndividualValue = () => {
-    return Math.floor(Math.random() * this.MAX_IV);
+  initializeIndividualValue = () => {
+    return Math.floor(Math.random() * Stat.MAX_IV);
   };
 
   setIv = (iv) => {
