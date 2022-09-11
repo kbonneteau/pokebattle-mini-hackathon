@@ -1,29 +1,13 @@
 import axios from "axios";
+import Pokemon from "./Pokemon";
 
 // ======================
 //      FUNCTIONS
 // ======================
 
-/**
- * Pokemon class to store relevant pokemon data.
- *
- * @param {string} pokemonName string from API containing the pokemon name
- * @param {array} pokemonMoves array of strings containing the names of the pokemon's moves
- * @param {number} pokemonHp a number for the base hp stat of that pokemon
- * @param {object} pokemonSprites an object containing the front and back images for the pokemon
- */
-class Pokemon {
-  constructor(pokemonName, pokemonMoves, pokemonHp, pokemonSprites) {
-    this.pokemonName = pokemonName;
-    this.pokemonHp = pokemonHp;
-    this.pokemonMoves = pokemonMoves;
-    this.pokemonSprites = pokemonSprites;
-  }
-  describe() {
-    console.log(this.pokemonName);
-    console.log(this.pokemonHp);
-  }
-}
+axios
+  .get("https://pokeapi.co/api/v2/pokemon/1")
+  .then((res) => console.log(res.data));
 
 /**
  * Find a random pokemon ID. Limited to 1st gen pokemon (because I'm old).
