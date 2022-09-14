@@ -15,13 +15,14 @@ const playerParty = {
 };
 
 // === TESTING ===
-// axios.get("https://pokeapi.co/api/v2/pokemon/1").then((res) => {
-//   console.log(res.data);
-//   const { name, stats } = res.data;
-//   const bulbasaur = new Pokemon(name, stats, 5);
-//   //   console.log(bulbasaur.getStats().getBaseStats());
-//   console.log(bulbasaur.getStats());
-// });
+axios.get("https://pokeapi.co/api/v2/pokemon/1").then((res) => {
+  console.log(res.data);
+  const { name, stats, moves, sprites } = res.data;
+  const hp = stats[0].base_stat;
+  const bulbasaur = new Pokemon(name, moves, hp, sprites, stats, 5);
+  console.log(bulbasaur.getCurrentHp());
+  console.log(bulbasaur.getStats());
+});
 
 /**
  * Find a random pokemon ID. Limited to 1st gen pokemon (because I'm old).

@@ -64,6 +64,7 @@ class AllStats {
 
   getCurrentStats = (level) => {
     return {
+      hp: this.stats.hp.calculateStat(level),
       attack: this.stats.attack.calculateStat(level),
       defense: this.stats.defense.calculateStat(level),
       speed: this.stats.speed.calculateStat(level),

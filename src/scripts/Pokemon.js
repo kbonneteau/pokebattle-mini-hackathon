@@ -13,6 +13,8 @@ import AllStats from "./AllStats";
  * @param {object} pokemonSprites an object containing the front and back images for the pokemon
  */
 class Pokemon {
+  static MAX_LEVEL = 100;
+  static MIN_LEVEL = 1;
   //   level;
   //   type1;
   //   type2;
@@ -33,7 +35,9 @@ class Pokemon {
     this.sprites = sprites;
     this.stats = new AllStats(baseStats);
     this.level = level;
+    this.currentHp = this.stats.getCurrentStats(level).hp;
   }
+
   describe = () => {
     console.log(this.pokemonName);
     console.log(this.pokemonHp);
@@ -41,6 +45,10 @@ class Pokemon {
 
   getStats = () => {
     return this.stats.getCurrentStats(this.level);
+  };
+
+  getCurrentHp = () => {
+    return this.currentHp;
   };
 
   // this doesn't work
