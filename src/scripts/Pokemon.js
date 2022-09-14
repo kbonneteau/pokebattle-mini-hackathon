@@ -26,30 +26,13 @@ class Pokemon {
   //   baseStats;
   //   name;
 
-  //   constructor(
-  //     pokemonName,
-  //     pokemonMoves,
-  //     pokemonHp,
-  //     pokemonSprites,
-  //     baseStats,
-  //     types,
-  //     level
-  //   ) {
-  constructor(
-    pokemonName,
-    // pokemonMoves,
-    // pokemonHp,
-    // pokemonSprites,
-    baseStats,
-    level
-  ) {
-    this.pokemonName = pokemonName;
-    // this.pokemonHp = pokemonHp;
-    // this.pokemonMoves = pokemonMoves;
-    // this.pokemonSprites = pokemonSprites;
+  constructor(name, moves, hp, sprites, baseStats, level) {
+    this.name = name;
+    this.hp = hp;
+    this.moves = moves;
+    this.sprites = sprites;
     this.stats = new AllStats(baseStats);
     this.level = level;
-    // this.types = types;
   }
   describe = () => {
     console.log(this.pokemonName);
